@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 20px;
+}
+main  {
+ 
+}
+body {
+    padding: 0.3rem;
+}
+
+img {
+    margin: 0rem;
+    padding: 0rem;
+    border: none;
+}
+
+section.destaque {
+    text-align: center;
+}
+
+section.testemunhos {
+    text-align: center;
+}
