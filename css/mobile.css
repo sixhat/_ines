@@ -410,52 +410,229 @@
 
 
 
-     .post-container {
-        width: 100%;
-        max-width: 480px; 
-        margin: 0 auto;
-        padding: 10px 20px;
+    
+
+
+      .post-section {
+        background: #ffffff;
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
     }
 
-   
+    .post-container {
+        width: 90%;
+        max-width: 600px;
+        margin: auto;
+        text-align: center; /* centra TÍTULO e IMAGEM */
+        font-family: 'Inter', sans-serif;
+    }
+
     .post-title {
+        font-family: 'Playfair Display', serif;
         font-size: 28px;
+        font-weight: 700;
+        line-height: 1.3;
         margin-bottom: 30px;
-        text-align: center;
-        line-height: 1.2;
     }
 
-   
+    /* -------- ORDEM CORRETA NO MOBILE -------- */
+
     .post-top {
         display: flex;
-        flex-direction: column;   
-        text-align: left;
-        gap: 20px;
-        margin-bottom: 40px;
+        flex-direction: column;
+        align-items: center;
+        order: 1;
     }
 
-    
-    .post-intro p {
-        font-size: 17px;
-        line-height: 1.55;
-        margin-bottom: 18px;
-    }
-
-    
-    .post-img {
+    /* Primeiro texto (INTRO) → alinhado à esquerda */
+    .post-intro {
+        order: 1;
         width: 100%;
-        max-width: 360px;    
+        text-align: left;
+        margin-bottom: 25px;
+    }
+
+    .post-intro p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    /* Imagem — sempre no MEIO */
+    .post-img,
+    .post-top img {
+        order: 2;
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    /* Segundo texto → alinhado à esquerda */
+    .post-body {
+        order: 3;
+        width: 100%;
+        text-align: left;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .post-body p {
+        margin-bottom: 20px;
+    }
+
+
+
+   
+
+
+
+
+
+      .post-section {
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+        background: #ffffff;
+    }
+
+    .post-container {
+        width: 90%;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    /* Título centrado */
+    .post-title {
+        text-align: center;
+        font-size: 26px;
+        line-height: 1.3;
+        margin-bottom: 30px;
+    }
+
+    /* ---- ORDEM MOBILE ---- */
+    .post-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Primeiro bloco de texto (post-intro) aparece primeiro */
+    .post-intro {
+        order: 1;
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    /* Imagem fica ao centro e vem em segundo */
+    .post-header img {
+        order: 2;
+        width: 100%;
+        max-width: 350px;
         height: auto;
         object-fit: cover;
         border-radius: 4px;
         border: 1px solid #000;
-        margin: 0 auto;    
-        margin-bottom: 20px; 
+        margin: 20px auto;
     }
 
-    .post-body p {
-        font-size: 16px;
-        line-height: 1.6;
-        margin-bottom: 24px;
+    /* Segundo bloco de texto (post-text) vem por último */
+    .post-text {
+        order: 3;
+        width: 100%;
         text-align: left;
+        margin-top: 20px;
     }
+
+    /* Estilos de texto */
+    .post-intro p,
+    .post-text p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+
+
+    
+
+ .post-section {
+    background: #ffffff;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Caixa principal do conteúdo */
+  .post-container {
+    width: 90%;
+    max-width: 480px;
+  }
+
+  /* Título centrado, igual aos outros posts mobile */
+  .post-container h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    line-height: 1.3;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  /* --- BLOCO IMAGEM + INTRO --- */
+
+  /* Aqui é o truque: invertes a ordem dos filhos
+     (imagem e .post-intro) só no mobile */
+  .post-header {
+    display: flex;
+    flex-direction: column-reverse;   /* primeiro texto, depois imagem */
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 35px;
+  }
+
+  /* Imagem centrada e com largura controlada */
+  .post-header img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #000;
+  }
+
+  /* Intro ocupa a largura toda e texto alinhado à esquerda */
+  .post-intro {
+    width: 100%;
+    text-align: left;
+  }
+
+  .post-intro p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  /* --- TEXTO PRINCIPAL (BODY) --- */
+
+  .post-body {
+    width: 100%;
+    text-align: left;      /* texto encostado à esquerda */
+  }
+
+  .post-body p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+  }
