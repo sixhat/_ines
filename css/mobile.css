@@ -4,7 +4,8 @@
 
 
   .portfolio {
-        padding: 40px 15px;
+      margin-top: 35px;
+        padding: 40px;
         background-color: #f7f7f7;
         text-align: center;
     }
@@ -37,7 +38,9 @@
 
 
 
-
+.sobre-sec {
+    background-color: #f7f7f7;
+}
 
 .sobre-container {
     display: flex;
@@ -49,6 +52,7 @@
 
 
 .sobre-img img {
+     margin-top: 85px;
     width: 100%;
     height: auto;
     max-width: 380px;
@@ -91,6 +95,7 @@
     color: #000;
     margin: 20px auto 0;  
     width: fit-content;
+    margin-bottom: 35px;
 }
 
 
@@ -98,6 +103,7 @@
 
 
  .sec-precos {
+     margin-top: 35px;
         padding: 40px 0;
         text-align: center;
         background-color: #f7f7f7;;
@@ -192,6 +198,7 @@
 
 
     .sec-formulario {
+        margin-top: 45px;
     background: #f3f3f3;  
 }
 
@@ -330,6 +337,7 @@
 
 
       .blog-section {
+          margin-top: 35px;
         max-width: 768px;
         background-color:  #f3f3f3;;
         padding: 40px 0;
@@ -424,7 +432,7 @@
         width: 90%;
         max-width: 600px;
         margin: auto;
-        text-align: center; /* centra TÍTULO e IMAGEM */
+        text-align: center; 
         font-family: 'Inter', sans-serif;
     }
 
@@ -436,7 +444,7 @@
         margin-bottom: 30px;
     }
 
-    /* -------- ORDEM CORRETA NO MOBILE -------- */
+    
 
     .post-top {
         display: flex;
@@ -445,7 +453,7 @@
         order: 1;
     }
 
-    /* Primeiro texto (INTRO) → alinhado à esquerda */
+    
     .post-intro {
         order: 1;
         width: 100%;
@@ -459,7 +467,7 @@
         margin-bottom: 15px;
     }
 
-    /* Imagem — sempre no MEIO */
+   
     .post-img,
     .post-top img {
         order: 2;
@@ -472,7 +480,7 @@
         display: block;
     }
 
-    /* Segundo texto → alinhado à esquerda */
+   
     .post-body {
         order: 3;
         width: 100%;
@@ -506,7 +514,7 @@
         margin: auto;
     }
 
-    /* Título centrado */
+   
     .post-title {
         text-align: center;
         font-size: 26px;
@@ -514,34 +522,14 @@
         margin-bottom: 30px;
     }
 
-    /* ---- ORDEM MOBILE ---- */
+   
     .post-header {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    /* Primeiro bloco de texto (post-intro) aparece primeiro */
-    .post-intro {
-        order: 1;
-        width: 100%;
-        margin-bottom: 30px;
-        text-align: left;
-    }
-
-    /* Imagem fica ao centro e vem em segundo */
-    .post-header img {
-        order: 2;
-        width: 100%;
-        max-width: 350px;
-        height: auto;
-        object-fit: cover;
-        border-radius: 4px;
-        border: 1px solid #000;
-        margin: 20px auto;
-    }
-
-    /* Segundo bloco de texto (post-text) vem por último */
+ 
     .post-text {
         order: 3;
         width: 100%;
@@ -549,7 +537,6 @@
         margin-top: 20px;
     }
 
-    /* Estilos de texto */
     .post-intro p,
     .post-text p {
         font-size: 18px;
@@ -572,13 +559,13 @@
     justify-content: center;
   }
 
-  /* Caixa principal do conteúdo */
+  
   .post-container {
     width: 90%;
     max-width: 480px;
   }
 
-  /* Título centrado, igual aos outros posts mobile */
+
   .post-container h1 {
     font-family: 'Playfair Display', serif;
     font-size: 26px;
@@ -588,19 +575,16 @@
     margin-bottom: 30px;
   }
 
-  /* --- BLOCO IMAGEM + INTRO --- */
-
-  /* Aqui é o truque: invertes a ordem dos filhos
-     (imagem e .post-intro) só no mobile */
+ 
   .post-header {
     display: flex;
-    flex-direction: column-reverse;   /* primeiro texto, depois imagem */
+    flex-direction: column-reverse;  
     align-items: center;
     gap: 25px;
     margin-bottom: 35px;
   }
 
-  /* Imagem centrada e com largura controlada */
+  
   .post-header img {
     width: 100%;
     max-width: 320px;
@@ -610,7 +594,7 @@
     border: 1px solid #000;
   }
 
-  /* Intro ocupa a largura toda e texto alinhado à esquerda */
+ 
   .post-intro {
     width: 100%;
     text-align: left;
@@ -623,11 +607,11 @@
     margin-bottom: 10px;
   }
 
-  /* --- TEXTO PRINCIPAL (BODY) --- */
+ 
 
   .post-body {
     width: 100%;
-    text-align: left;      /* texto encostado à esquerda */
+    text-align: left;     
   }
 
   .post-body p {
