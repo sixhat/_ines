@@ -7,48 +7,77 @@
 }
 
 
-
-
-.logo img {
-    justify-self: start;
-    width: 180px;
+.logo,
+.icons {
+    flex: 0 0 190px;        /* <-- mesma largura dos dois lados */
+    display: flex;
+    align-items: center;
 }
 
+.logo {
+    justify-content: flex-start;
+}
 
+.logo img {
+    width: 150px;
+    /* se tinhas margens estranhas, tira-as: */
+    margin: 0;
+}
 
 .navbar {
-    width: 100%;
-    padding: 20px 60px;
-    display: grid;                 /* ← MUDA FLEX PARA GRID */
-    grid-template-columns: 1fr 1fr 1fr;  /* ← 3 colunas iguais */
+   position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9000;
+
+    display: flex;
     align-items: center;
-    background: #ffffff;
+    justify-content: center;
+
+    padding: 18px 60px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid #e6e6e6;
     box-sizing: border-box;
 }
 
 
-.menu{
-     justify-self: center; 
+.menu {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;    /* links mesmo ao meio */
+                 /* espaço uniforme entre links */
 }
 
+
 .menu a {
-    margin: 0 12px;
+    margin: 0 20px;
     text-decoration: none;
     color: black;
     font-size: 23px;
 }
 
 
-
 .icons {
-  justify-self: end;
+    justify-content: flex-end;
+    gap: 24px;                  /* aumenta gap para “encher” mais */
 }
 
+
+.icons i {
+    font-size: 22px;
+}
+
+
+
+
+
 .hero {
-    margin-top: 76px;
+    margin-top: 70px;
     display: flex;
     width: 100%;
-    min-height: 80vh;
 }
 
 .hero-text {
@@ -75,12 +104,14 @@
 
 .hero-img {
     width: 50%;
+    height: auto;
 }
 
 .hero-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+     object-fit: cover; /* mantém enquadramento sem distorcer */
+    object-position: center;
 }
 
 
@@ -96,7 +127,7 @@
     font-family: 'Playfair Display', serif;
     font-size: 32px;
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: 40px;
 }
 
 .destaque-subtitle {
@@ -147,9 +178,13 @@
 }
 
 
+
+
+
+
 .testemunhos {
     background-color: #f7f7f7;
-      padding: 40px 0;
+      padding: 50px 0;
    min-height: 60vh;
  display: flex;
     flex-direction: column;
@@ -160,14 +195,14 @@
 .testemunhos-subtitulo {
   font-style: italic;
   font-size: 1.4rem;
-  margin-bottom: 1rem;
   color: #000;
+  margin-bottom: 40px;
 }
 
 .testemunhos-titulo {
   font-size: 2rem;
   letter-spacing: 1px;
-  margin-bottom: 3rem;
+  margin-bottom: 50px;
   font-weight: 600;
 }
 
@@ -494,6 +529,7 @@
 
 
 .sobre-sec {
+    margin-top: 70px;
     padding: 80px 0;
     background-color: #f7f7f7;
 }
@@ -569,16 +605,21 @@
 }
 
 
+
+
+
+
 .sec-precos {
+     margin-top: 70px;
     background: #f7f7f7;
-    padding: 80px 0;
+    padding: 30px 0;
     text-align: center;
 }
 
 .titulo-sec {
     font-family: 'Playfair Display', serif;
-    font-size: 45px;
-    margin-bottom: 60px;
+   font-size: 35px;
+    margin-bottom: 50px;
 }
 
 
@@ -649,7 +690,7 @@
 
 .btn-center {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 50px;
      display: inline-block;
     padding: 18px 60px;
     background: #ddd;
@@ -678,9 +719,11 @@
 }
 
 .topo-form img {
+      margin-top: 70px;
     width: 100%;
     height: 310px;
     object-fit: cover;
+   background-color: #ffffff;
 }
 
 .topo-texto {
@@ -689,7 +732,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .topo-texto h2 {
@@ -789,14 +832,18 @@
 
 
 
+
+
 .blog-section {
+      margin-top: 70px;
     background: #f7f7f7;
-    padding: 80px 0;
+    padding: 30px 0;
     text-align: center;
 }
 
 
 .blog-title h2 {
+    
     font-family: 'Playfair Display', serif;
     font-size: 35px;
     margin-bottom: 10px;
@@ -902,13 +949,17 @@
 
 
 
+.post-section1 {
+     background: #f7f7f7;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
 
 .post-container {
-    max-width: 900px;
-    margin: 100px auto;
-    padding: 0 20px;
-    font-family: 'Inter', sans-serif;
-    color: #333;
+      width: 85%;
+    max-width: 1050px;
+    margin: auto;
 }
 
 .post-title {
@@ -964,8 +1015,8 @@
 
 
 
-.post-section {
-    background: #ffffff;
+.post-section2 {
+     background: #f7f7f7;
     padding: 60px 0;
     display: flex;
     justify-content: center;
@@ -1024,15 +1075,16 @@
 
 
 
-.post-section {
-    background: #ffffff;
+.post-section3 {   
+    margin-top: 50px;
+     background: #f7f7f7;
     padding: 60px 0;
     display: flex;
     justify-content: center;
 }
 
 .post-container {
-    width: 80%;
+    width: 85%;
 }
 
 
@@ -1081,23 +1133,23 @@
 
 
 .portfolio {
-   
+   margin-top: 67px;
     text-align: center;
-    padding: 60px 0;
+    padding: 30px 0;
     background-color: #f7f7f7;
 }
 
 .portfolio h2 {
     font-family: 'Playfair Display', serif;
     font-size: 36px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .portfolio .subtitulo {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-style: italic;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 

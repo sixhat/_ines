@@ -336,7 +336,7 @@
 
 
 
-      .blog-section {
+    .blog-section {
           margin-top: 35px;
         max-width: 768px;
         background-color:  #f3f3f3;
@@ -421,11 +421,11 @@
     
 
 
-      .post-section {
-        background: #ffffff;
-        padding: 40px 0;
-        display: flex;
-        justify-content: center;
+      .post-section1 {
+         background: #f7f7f7;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
     }
 
     .post-container {
@@ -501,11 +501,11 @@
 
 
 
-      .post-section {
-        padding: 40px 0;
-        display: flex;
-        justify-content: center;
-        background: #ffffff;
+      .post-section2 {
+        background: #f7f7f7;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
     }
 
     .post-container {
@@ -552,9 +552,9 @@
 
     
 
- .post-section {
-    background: #ffffff;
-    padding: 40px 0;
+ .post-section3 {
+     background: #f7f7f7;
+    padding: 80px 0;
     display: flex;
     justify-content: center;
   }
