@@ -1,5 +1,192 @@
 
 
+ .hero {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 46px;
+        margin: 0;
+       background-color: #f7f7f7;
+    }
+
+    /* garante que os blocos obedecem à ordem abaixo */
+    .hero-img { order: 1; }
+    .hero-logo-mobile { order: 2; }
+    .hero-text { order: 3; }
+
+    /* imagem */
+    .hero-img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* logo "ANA GOMES" no mobile */
+    .hero-logo-mobile {
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        margin: 25px 0 10px;
+    }
+
+    /* texto */
+    .hero-text {
+        width: 100%;
+        padding: 0 25px px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+
+
+
+
+
+
+  .destaque-section {
+        padding: 40px 0;
+    }
+
+    .destaque-title {
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    .destaque-subtitle {
+         text-align: center;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    /* 🔥 Aqui está a mudança principal: agora são 2 colunas no mobile */
+    .destaque-grid {
+        max-width: 100%;
+        columns: 2;           /* de 3 → 2 colunas */
+        column-gap: 12px;     /* espaço entre colunas */
+        padding: 0 15px;
+    }
+
+    /* imagens ocupam sempre 100% da coluna */
+    .destaque-grid img {
+        width: 100%;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        display: block;
+    }
+
+    /* botão */
+    .btn-wrapper {
+        margin-top: 20px;
+    }
+
+    .btn-destaque {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+
+
+
+     
+
+  .testemunhos {
+    position: relative; 
+    background: #f7f7f7;
+    padding: 40px 0 60px;
+    text-align: center;
+    height: auto; /* Corrigido */
+}
+
+/* Subtítulo */
+.testemunhos-subtitulo {
+    font-style: italic;
+    font-size: 18px;
+    padding: 0 20px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Título */
+.testemunhos-titulo {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+/* ======= CARROSSEL ======= */
+
+.testemunhos-cards {
+    display: flex;
+    overflow-x: auto;                 /* rolagem horizontal */
+    scroll-snap-type: x mandatory;    /* snap correto */
+    gap: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Cada slide */
+.card {
+    flex: 0 0 85%;                     /* largura ideal */
+    max-width: 85%;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    padding: 25px;
+    border-radius: 6px;
+    scroll-snap-align: center;         /* trava no centro */
+    margin: 0 auto;
+}
+
+/* Texto */
+.card-texto {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.55;
+    margin-bottom: 20px;
+}
+
+/* Footer do card */
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.card-footer img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.card-name {
+    font-size: 0.95rem;
+    color: #000;
+}
+
+
+
+
+
+
+
+    
+
 
 
 
@@ -52,18 +239,20 @@
 
 
 .sobre-img img {
+    order: 2;
      margin-top: 85px;
     width: 100%;
-    height: auto;
-    max-width: 380px;
+    height: 350px;
+    max-width: 290px;
     object-fit: cover;
     border-radius: 4px;
 }
 
 
 .sobre-texto {
+     order: 1;
     width: 100%;
-    max-width: 90%;
+    max-width: 80%;
     text-align: left;
 }
 
@@ -88,7 +277,7 @@
     display: block;
     text-align: center;
     background: #dedede;
-    padding: 14px 40px;
+    padding: 14px 20px;
     border-radius: 6px;
     text-decoration: none;
     font-family: 'Inter', sans-serif;
@@ -106,7 +295,8 @@
      margin-top: 35px;
         padding: 40px 0;
         text-align: center;
-        background-color: #f7f7f7;;
+        background-color: #f7f7f7;
+        
     }
 
    
@@ -118,18 +308,20 @@
 
   
     .precos-container {
+        
         flex-direction: column;
         align-items: center;
         gap: 40px;
-        width: 100%;
-        padding: 0 20px;
-        margin: 0 auto;
+        max-width: 100%;
+        width: 80%;
+        
+        margin: 40px auto 0 auto; 
     }
 
    
     .pacote-card {
         width: 100%;
-        max-width: 430px;
+        max-width: 370px;
         background: #fff;
         border: 1px solid #ccc;
         overflow: hidden;
@@ -141,13 +333,14 @@
     
 
     .pacote-card img {
-        width: 100%;
+        max-width: 100%;
         height: 230px;
         object-fit: cover;
     }
 
    
     .pacote-info {
+        order: 2;
         padding: 25px 20px;
         text-align: center;
     }
@@ -307,7 +500,7 @@
 
     .blog-section {
           margin-top: 35px;
-        max-width: 768px;
+        max-width: 769px;
         background-color:  #f3f3f3;
         padding: 40px 0;
         text-align: center;
@@ -331,7 +524,6 @@
     }
 
     .blog-post {
-    
         background-color: white;
         display: flex;
         flex-direction: column;  
