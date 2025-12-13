@@ -106,25 +106,25 @@
     background: #f7f7f7;
     padding: 40px 0 60px;
     text-align: center;
-    height: auto; /* Corrigido */
+    height: 450px; /* Corrigido */
 }
 
 /* Subtítulo */
 .testemunhos-subtitulo {
     font-style: italic;
-    font-size: 18px;
+    font-size: 14px;
     padding: 0 20px;
-    color: #666;
+    color: #000000;
     margin-bottom: 20px;
 }
 
 /* Título */
 .testemunhos-titulo {
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 600;
     letter-spacing: 1px;
     padding: 0 20px;
-    margin-bottom: 30px;
+    
 }
 
 /* ======= CARROSSEL ======= */
@@ -133,9 +133,8 @@
     display: flex;
     overflow-x: auto;                 /* rolagem horizontal */
     scroll-snap-type: x mandatory;    /* snap correto */
-    gap: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    gap: 40px;
+   padding:40px;
 }
 
 /* Cada slide */
@@ -144,7 +143,7 @@
     max-width: 85%;
     background: #ffffff;
     border: 1px solid #ccc;
-    padding: 25px;
+    padding: 20px;
     border-radius: 6px;
     scroll-snap-align: center;         /* trava no centro */
     margin: 0 auto;
@@ -152,7 +151,7 @@
 
 /* Texto */
 .card-texto {
-    font-size: 1rem;
+    font-size: 14px;
     color: #333;
     line-height: 1.55;
     margin-bottom: 20px;
@@ -168,14 +167,14 @@
 }
 
 .card-footer img {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
     border-radius: 4px;
 }
 
 .card-name {
-    font-size: 0.95rem;
+    font-size: 14pxrem;
     color: #000;
 }
 
@@ -183,23 +182,110 @@
 
 
 
+.sec-pacotes {
+    text-align: center;
+    background: #ffffff;
+    padding: 40px 20px;
+}
 
+/* Título */
+.pacotes-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+/* Wrapper vira coluna */
+.pacotes-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+/* Card da imagem */
+.pacote-card-img {
+    position: relative;
+    width: 100%;
+    max-width: 340px;     /* 🔒 mantém tamanho consistente */
+    margin: 0 auto;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* Imagem */
+.pacote-card-img img {
+    width: 100%;
+    height: 220px;        /* 🔒 igual para as duas imagens */
+    object-fit: cover;
+    display: block;
+}
+
+/* Texto por cima da imagem */
+.pacote-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.25); /* leve escurecido */
+}
+
+/* Título do pacote */
+.pacote-overlay h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin: 0;
+}
+
+/* Preço */
+.pacote-overlay h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    margin-top: 6px;
+    font-weight: 300;
+}
+
+/* Botão */
+.btn-centerpacotes {
+    text-align: center;
+}
+
+.btn-pacotes {
+    display: inline-block;
+    background: #e6e6e6;
+    padding: 14px 50px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #000;
+}
 
     
 
 
 
 
+
+
+
+
   .portfolio {
       margin-top: 35px;
-        padding: 40px;
+        padding: 20px;
         background-color: #f7f7f7;
         text-align: center;
     }
 
     .portfolio h2 {
+        margin-top: 20px;
         font-size: 26px;
-        margin-bottom: 5px;
+        margin-bottom: 20px;
     }
 
     .portfolio .subtitulo {
