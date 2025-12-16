@@ -43,7 +43,7 @@
     }
 
     .hero-text p {
-        font-size: 18px;
+        font-size: 16px;
         margin-top: 15px;
         margin-bottom: 25px;
     }
@@ -55,18 +55,19 @@
 
 
   .destaque-section {
-        padding: 40px 0;
+        padding: 40px 20px;
     }
 
     .destaque-title {
         text-align: center;
         font-size: 26px;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
+       
     }
 
     .destaque-subtitle {
          text-align: center;
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 30px;
     }
 
@@ -75,7 +76,7 @@
         max-width: 100%;
         columns: 2;           /* de 3 → 2 colunas */
         column-gap: 12px;     /* espaço entre colunas */
-        padding: 0 15px;
+        
     }
 
     /* imagens ocupam sempre 100% da coluna */
@@ -104,7 +105,7 @@
   .testemunhos {
     position: relative; 
     background: #f7f7f7;
-    padding: 40px 0 60px;
+   padding: 40px 0px;
     text-align: center;
     height: 450px; /* Corrigido */
 }
@@ -120,6 +121,8 @@
 
 /* Título */
 .testemunhos-titulo {
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 26px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -132,7 +135,7 @@
     display: flex;
     overflow-x: auto;                 /* rolagem horizontal */
     scroll-snap-type: x mandatory;    /* snap correto */
-    gap: 20px;
+    gap: 30px;
    padding:40px;
 }
 
@@ -184,7 +187,7 @@
 .sec-pacotes {
     text-align: center;
     background: #ffffff;
-    padding: 40px 20px;
+   padding: 40px 50px;
 }
 
 /* Título */
@@ -215,7 +218,7 @@
 /* Imagem */
 .pacote-card-img img {
     width: 100%;
-    height: 220px;        /* 🔒 igual para as duas imagens */
+    height: 200px;        /* 🔒 igual para as duas imagens */
     object-fit: cover;
     display: block;
 }
@@ -283,7 +286,7 @@
 /* IMAGEM */
 .faq-image {
   position: relative;          /* remove absolute */
-  width: 160px;
+  width: 190px;
   margin-bottom: 30px;
 }
 
@@ -295,8 +298,7 @@
 
 /* CONTEÚDO */
 .faq-content {
-margin-left: 20px;
-margin-right: 20px;
+padding: 40px 40px;
   position: relative;          /* remove absolute */
   transform: none;             /* remove translate */
   text-align: center;
@@ -319,7 +321,7 @@ margin-right: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 18px;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
@@ -336,15 +338,15 @@ margin-right: 20px;
 
 
 .sec-contactos-inicial {
-    margin-top: 40px;
+   
         background: #ffffff;
-        padding: 40px 0 0;
     }
 
 
     .contactos-title {
+        margin-top: 50px;
         font-size: 26px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         text-align: center;
     }
 
@@ -353,13 +355,12 @@ margin-right: 20px;
     /* 2) formulário: largura certinha e alinhado */
     .form-container {
         max-width: 90%;
-        margin: 0 auto 40px;
+        margin: 0 auto 20px;
         display: block;
     }
 
     .campo {
         width: 100%;
-        margin-bottom: 18xpx;
     }
 
     .campo label {
@@ -370,51 +371,174 @@ margin-right: 20px;
 
     .campo input {
         width: 100%;
-        padding: 15px;
-        box-sizing: border-box;
+       border: 1.5px solid #000;
     }
 
 
     .btn-enviar-wrapper {
         text-align: center;
-        margin-top: 20px;
+      
     }
 
     .btn-enviar {
+          margin-top: 20px;
+            margin-bottom: 20px;
         width: 70%;
         height: 45px;
         max-width: 260px;
             border: 0cm;
     }
 
-     .contactos-wrapper {
-        margin: 0px; /* tira qualquer margem lateral/vertical extra */
+     .contactos-aviso {
+      padding-bottom: 30px;
     }
 
-    .contactos {
-        
+    .contactos-contactos {
         max-width: 90%;
         margin: 0 auto;
         text-align: center;
     }
 
-    .linha-vertical {
+    .linha-horizontal {
         width: 80%;
         height: 1px;
         background: #000;
-        margin: 25px auto;
+        margin: 15px auto;
     }
 
-    .contacto-esq p,
-    .contacto-dir p {
+    .contacto-texto1 p {
         font-size: 12px;
         line-height: 1.6;
     }
 
-    .icons {
-        text-align: center;
-        margin-top: 10px;
+    .contacto-texto2 p {
+         font-size: 12px;
+        line-height: 1.6;
+
     }
+
+
+
+
+
+
+
+
+ .final-banner {
+    position: relative;
+    width: 100%;
+    height: 300px;              /* ocupa o ecrã todo */
+    overflow: hidden;
+  }
+
+  .final-banner img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .banner-texto {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    padding: 0 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #000000;
+  }
+
+  .banner-texto h1 {
+    font-size: 26px;
+    line-height: 1.3;
+    margin-bottom: 16px;
+  }
+
+  .banner-texto h3 {
+    font-size: 16px;
+    margin-bottom: 24px;
+    font-weight: 400;
+  }
+
+  .btn-marca {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+
+}
+  
+
+  /* ---------- CONTACTOS FINAL ---------- */
+
+ .final-contactos {
+    padding: 40px 20px;
+    background: #fff;
+}
+
+.contactos-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+/* LOGO À ESQUERDA */
+.contactos-logo img {
+    display: none;
+}
+
+/* BLOCO DIREITO */
+.contactos-centro {
+    flex: 1;
+    text-align: left;
+}
+
+.contactos-frase {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+
+.contactos-icones {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.contactos-icones i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* BOTÃO BLOG */
+.contactos-botao {
+    margin-top: 16px;
+}
+
+.btn-blog {
+    display: inline-block;
+    background: #e6e6e6;
+    color: #000;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+text-align: center;
+}
+
+
 
 
 
@@ -424,7 +548,7 @@ margin-right: 20px;
 
 
   .portfolio {
-      margin-top: 35px;
+      margin-top:40px;
         padding: 20px;
         background-color: #f7f7f7;
         text-align: center;
@@ -433,12 +557,12 @@ margin-right: 20px;
     .portfolio h2 {
         margin-top: 20px;
         font-size: 26px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .portfolio .subtitulo {
-        font-size: 14px;
-        margin-bottom: 25px;
+        font-size: 16px;
+        margin-bottom: 30px;
     }
 
    
@@ -494,16 +618,16 @@ margin-right: 20px;
 .sobre-texto h2 {
     text-align: center;
     font-size: 26px;
-    line-height: 1.3;
-    margin-bottom: 20px;
+    line-height: 26px;
+    margin-bottom:30px;
 }
 
 
 .sobre-texto p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.55;
     color: #333;
-    margin-bottom: 18px;
+    margin-bottom: 30px;
 }
 
 
@@ -527,7 +651,7 @@ margin-right: 20px;
 
  .sec-precos {
      margin-top: 35px;
-        padding: 40px 0;
+        padding: 50px 0px;
         text-align: center;
         background-color: #f7f7f7;
         
@@ -535,27 +659,25 @@ margin-right: 20px;
 
    
     .titulo-sec {
-        font-size: 32px;
+        font-size: 26px;
         margin-bottom: 40px;
         text-align: center;
     }
 
   
-    .precos-container {
-        
+    .precos-container { 
         flex-direction: column;
         align-items: center;
         gap: 40px;
         max-width: 100%;
         width: 80%;
-        
         margin: 40px auto 0 auto; 
     }
 
    
     .pacote-card {
         width: 100%;
-        max-width: 370px;
+        max-width: 260px;
         background: #fff;
         border: 1px solid #ccc;
         overflow: hidden;
@@ -575,23 +697,23 @@ margin-right: 20px;
    
     .pacote-info {
         order: 2;
-        padding: 25px 20px;
+        padding: 15px 10px;
         text-align: center;
     }
 
     .pacote-titulo h3 {
-        font-size: 26px;
+        font-size: 22px;
         margin-bottom: 5px;
     }
 
     .pacote-titulo h4 {
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 15px;
     }
 
     .pacote-texto {
-        font-size: 18px;
-        line-height: 1.6;
+        font-size: 14px;
+        line-height: 1.2;
         text-align: center;
     }
 
@@ -625,9 +747,10 @@ margin-right: 20px;
 
 
  .sec-formulario {
+    padding-top: 40px;
     margin-top: 40px;
         background: #f7f7f7;
-        padding: 40px 0 0;
+        
     }
 
     /* 1) esconder a imagem do topo no mobile */
@@ -637,6 +760,7 @@ margin-right: 20px;
 
     /* libertar o texto (já não precisa de posição absoluta) */
     .topo-form {
+       
         position: static;
         height: auto;
     }
@@ -650,19 +774,19 @@ margin-right: 20px;
     }
 
     .topo-texto h2 {
-        font-size: 20px;
-        margin-bottom: 8px;
+        font-size: 26px;
+        margin-bottom: 25px;
     }
 
     .topo-texto p {
-        font-size: 12px;
+        font-size: 16px;
         line-height: 1.5;
     }
 
     /* 2) formulário: largura certinha e alinhado */
     .form-container {
         max-width: 90%;
-        margin: 0 auto 40px;
+        margin: 20px 50px;
         display: block;
     }
 
@@ -673,7 +797,7 @@ margin-right: 20px;
 
     .campo label {
         display: block;
-        font-size: 14px;
+        font-size: 16px;
         margin-bottom: 6px;
     }
 
@@ -717,7 +841,7 @@ margin-right: 20px;
 
     .contacto-esq p,
     .contacto-dir p {
-        font-size: 12px;
+        font-size: 16px;
         line-height: 1.6;
     }
 
@@ -736,13 +860,14 @@ margin-right: 20px;
           margin-top: 35px;
         max-width: 769px;
         background-color:  #f3f3f3;
-        padding: 40px 0;
+        padding: 40px 50px;
         text-align: center;
     }
 
    
     .blog-title h2 {
         font-size: 26px;
+        margin-bottom: 25px;
     }
 
     .blog-title p {
@@ -770,7 +895,7 @@ margin-right: 20px;
    
     .blog-post img {
         width: 100%;
-      height: 390px; 
+      height: 300px; 
         object-fit: cover;
         order: 1;                 
     }
