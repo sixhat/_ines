@@ -226,26 +226,54 @@
         </h2>
 
         <div class="faq-box">
-            <span></span><span class="faq-plus">+</span>
-        </div>
+           <button class="faq-question">
+      <span>Quanto tempo demora a entrega das fotografias?</span>
+      <span class="faq-plus">+</span>
+    </button>
+    <div class="faq-answer">
+      <p>A entrega final é feita entre 4 a 6 semanas após o casamento.</p>
+    </div>
+  </div>
 
-        <div class="faq-box">
-            <span></span><span class="faq-plus">+</span>
-        </div>
+  <div class="faq-box">
+    <button class="faq-question">
+      <span>Trabalhas fora de Lisboa?</span>
+      <span class="faq-plus">+</span>
+    </button>
+    <div class="faq-answer">
+      <p>Sim, fotografo casamentos em todo o país e também no estrangeiro.</p>
+    </div>
+  </div>
 
-        <div class="faq-box">
-            <span></span><span class="faq-plus">+</span>
-        </div>
+  <div class="faq-box">
+    <button class="faq-question">
+      <span>Quantas fotografias são entregues?</span>
+      <span class="faq-plus">+</span>
+    </button>
+    <div class="faq-answer">
+      <p>O número varia conforme o pacote, mas nunca entrego menos de 500 imagens.</p>
+    </div>
+  </div>
 
-        <div class="faq-box">
-            <span></span><span class="faq-plus">+</span>
-        </div>
+  <div class="faq-box">
+    <button class="faq-question">
+      <span>Fazes sessões de noivado?</span>
+      <span class="faq-plus">+</span>
+    </button>
+    <div class="faq-answer">
+      <p>Sim! As sessões de noivado são uma ótima forma de nos conhecermos.</p>
+    </div>
+  </div>
 
-          <div class="faq-box">
-            <span></span><span class="faq-plus">+</span>
-        </div>
-
-
+  <div class="faq-box">
+    <button class="faq-question">
+      <span>Como posso reservar a data?</span>
+      <span class="faq-plus">+</span>
+    </button>
+    <div class="faq-answer">
+      <p>A reserva é feita através de contrato e sinalização da data.</p>
+    </div>
+  </div>
     </div>
 
 </section>
@@ -376,5 +404,24 @@
 
 
 
+<script>
+  const faqQuestions = document.querySelectorAll('.faq-question');
+
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+      const box = question.parentElement;
+
+      // fecha os outros
+      document.querySelectorAll('.faq-box').forEach(item => {
+        if (item !== box) {
+          item.classList.remove('active');
+        }
+      });
+
+      // abre/fecha o atual
+      box.classList.toggle('active');
+    });
+  });
+</script>
 
 </body>

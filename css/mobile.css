@@ -487,12 +487,6 @@ padding: 40px 40px;
     background: #fff;
 }
 
-.contactos-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 24px;
-}
 
 /* LOGO À ESQUERDA */
 .contactos-logo img {
@@ -502,7 +496,7 @@ padding: 40px 40px;
 /* BLOCO DIREITO */
 .contactos-centro {
     flex: 1;
-    text-align: left;
+    text-align:center;
 }
 
 .contactos-frase {
@@ -512,9 +506,8 @@ padding: 40px 40px;
 }
 
 .contactos-icones {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 12px;
+ display: none;
+
 }
 
 .contactos-icones i {
@@ -526,6 +519,7 @@ padding: 40px 40px;
 /* BOTÃO BLOG */
 .contactos-botao {
     margin-top: 16px;
+    
 }
 
 .btn-blog {
@@ -861,7 +855,7 @@ text-align: center;
           margin-top: 35px;
         max-width: 769px;
         background-color:  #f3f3f3;
-        padding: 40px 50px;
+        padding: 40px 25px;
         text-align: center;
     }
 
