@@ -6,9 +6,8 @@
 :root {
     font-size: 20px;
 }
-main  {
- 
-}
+
+
 body {
     padding: 0.3rem;
 }
@@ -26,3 +25,5 @@ section.destaque {
 section.testemunhos {
     text-align: center;
 }
+
+
